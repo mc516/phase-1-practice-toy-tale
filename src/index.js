@@ -66,7 +66,7 @@ function createCard(toy) {
   card.querySelector('.like-btn').addEventListener('click', e => {
       e.preventDefault()
       toy.likes++
-      //card.querySelector('p').textContent = `${toy.likes} Likes`;
+      card.querySelector('p').textContent = `${toy.likes} Likes`;
       updateLikes(toy)
       })
 } 
